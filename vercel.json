@@ -1,0 +1,16 @@
+{
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "has": [
+          {
+            "type": "host",
+            "value": "paystream.finance"
+          }
+        ],
+        "destination": "https://app.paystream.finance/$1",
+        "permanent": true
+      }
+    ]
+  }
+  

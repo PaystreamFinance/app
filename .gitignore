@@ -1,0 +1,69 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+# Local pnpm content-addressed store (created by `pnpm install` when
+# offline-mirror is configured). Tens of thousands of files; never commit.
+.pnpm-store/
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+*.p12
+*.pfx
+*.key
+*.keystore
+*.dump
+*.sql.gz
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env files
+.env*.local
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# turbo
+.turbo
+
+certificates
+AGENTS.md
+.gstack/
+.cursor/
+.claude/
+BALANCE_FETCHING_GUIDE.md
+"CLAUDE 2.md"
+"src/app/vaults/page 2.tsx"
+"src/components/pagination-and-filters 2.tsx"
+"src/lib/solana-connection 2.ts"
+"src/lib/supabase 2.ts"
+"src/server/api/routers/vaults 2.ts"
+src/app/debug/
