@@ -339,7 +339,7 @@ function WeeklyChart({ data, allDexes }: { data: WeeklyResponse; allDexes: strin
               fontSize: 12,
               padding: "10px 14px",
             }}
-            labelFormatter={(v: string) => v.replace("|", " – ")}
+            labelFormatter={(v: string) => v.replaceAll("|", " – ")}
             labelStyle={{ color: "#BCEBFF", marginBottom: 6, fontWeight: 600 }}
             itemStyle={{ color: "#e2e8f0" }}
             cursor={{ fill: "rgba(255,255,255,0.03)", rx: 4 }}

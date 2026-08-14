@@ -279,7 +279,7 @@ function WeeklyChart({ data, allDexes }: { data: WeeklyResponse; allDexes: strin
           <Tooltip
             formatter={(v: number, name: string): [string, string] => [fmt(v), getDexLabel(name)]}
             contentStyle={{ backgroundColor: "#0A1628", border: "1px solid rgba(188,235,255,0.12)", borderRadius: 8, color: "#fff", fontSize: 11, padding: "8px 12px" }}
-            labelFormatter={(v: string) => v.replace("|", " – ")}
+            labelFormatter={(v: string) => v.replaceAll("|", " – ")}
             labelStyle={{ color: "#BCEBFF", marginBottom: 4, fontWeight: 600 }}
             cursor={{ fill: "rgba(255,255,255,0.03)" }}
           />
